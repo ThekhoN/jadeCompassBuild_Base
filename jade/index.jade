@@ -1,0 +1,27 @@
+//output:../index.html
+//{
+    title:"Test jade compass build",
+    link:"Link"
+  }
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title=title
+    link(rel="stylesheet", href="stylesheets/screen.css")
+  body
+    #mainWrapperX_PromotionName
+      .subNavContX
+        ul
+          each n in ["01", "02", "03"]
+            li
+              a(href="")=link +n
+      .navContX
+        ul
+          each n in [1, 2, 3, 4, 5, 6]
+            li=link + " 0" + n
+      .headerBannerX 
+        h1 This is the main header     
+  script(src="js/jQueryMin.js")            
+            
