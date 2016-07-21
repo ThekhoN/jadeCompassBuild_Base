@@ -1,0 +1,29 @@
+{
+  "name": "jadecompassgulpbrowserified",
+  "version": "1.0.0",
+  "description": "INSTRUCTIONS:\r *************",
+  "main": "gulpfile.js",
+  "scripts": {
+    "build": "browserify js/app.js -o js/bundle.js",
+    "watch": "watchify js/app.js -o js/bundle.js",
+    "min": "browserify js/app.js -d -p [minifyify --map bundle.js.map --output bundle_min.js.map] > bundle_min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThekhoN/jadeCompassBuild_Base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThekhoN/jadeCompassBuild_Base/issues"
+  },
+  "homepage": "https://github.com/ThekhoN/jadeCompassBuild_Base#readme",
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "gulp": "^3.9.1",
+    "gulp-image-optimization": "^0.1.3",
+    "gulp-replace": "^0.5.4",
+    "minifyify": "^7.3.3",
+    "watchify": "^3.7.0"
+  }
+}
